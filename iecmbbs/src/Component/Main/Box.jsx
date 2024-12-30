@@ -1,5 +1,5 @@
 import React from "react";
-import './Box.css'
+import "./Box.css";
 
 export default function Box() {
   return (
@@ -23,7 +23,7 @@ export default function Box() {
           width: "90%",
           gap: "5px",
           paddingBottom: "19px",
-          borderRadius:'10px'
+          borderRadius: "10px",
         }}
       >
         <h1>TAKE A FLIGHT TOWARDS YOUR DREAM WITH US!.</h1>

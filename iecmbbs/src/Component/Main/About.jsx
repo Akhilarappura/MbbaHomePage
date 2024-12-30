@@ -44,7 +44,6 @@ export default function About() {
         </div>
       </div>
 
-
       <div className="counters-container">
         <div className="counter-item">
           <h1>
