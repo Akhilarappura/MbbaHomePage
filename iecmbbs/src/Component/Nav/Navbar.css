@@ -1,0 +1,60 @@
+
+/* Basic styling for the nav list */
+.nav-ul {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  
+
+    
+}
+
+
+/* Style for each list item (nav item) */
+.nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative; /* Position for hover content */
+  color: white;
+}
+
+/* Hover effect for nav items */
+.nav-item:hover {
+
+}
+
+/* Style for content shown on hover */
+.hover-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 200px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Styling for the nav-ul container */
+.nav-ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #080808;
+}
+
+.nav-ul li {
+  color: rgb(6, 4, 4);
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.nav-ul li:hover {
+  background-color: #575757;
+}
