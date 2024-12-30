@@ -11,22 +11,45 @@ import Gallery from './Gallery.jsx'
 
 export default function Main() {
   return (
-    <div>
-         <div className='image-first'>
-  
-      <About />
-      <MostCountry />
-      <Choose />
-      <SliderNew />
-      <Box />
-      <Submit />
-      <Gallery />
-      <Footer />
-    
-     
-    
-    </div>
-   
+    <div className="main-container">
+      <div className='image-first'>
+        <img src="/path-to-your-image.jpg" alt="Main image" className="image" />
+      </div>
+      
+      <div className="content-overlay">
+        <section className="section">
+          <About />
+        </section>
+        
+        <section className="section">
+          <MostCountry />
+        </section>
+        
+        <section className="section">
+          <Choose />
+        </section>
+        
+        <section className="section">
+          <SliderNew />
+        </section>
+        
+        <section className="section">
+          <Box />
+        </section>
+        
+        <section className="section">
+          <Submit />
+        </section>
+        
+        <section className="section">
+          <Gallery />
+        </section>
+        
+        <section className="section">
+          <Footer />
+        </section>
+      </div>
     </div>
   )
 }
+

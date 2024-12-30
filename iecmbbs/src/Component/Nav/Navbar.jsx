@@ -4,15 +4,15 @@ import Header from '../Header/Header';
 import New from '../New/New';
 
 export default function Navbar() {
-  // State to track hover over menu items
+
   const [hoveredItem, setHoveredItem] = useState(null);
 
-  // Function to handle mouse enter (hover)
+
   const handleMouseEnter = (item) => {
     setHoveredItem(item);
   };
 
-  // Function to handle mouse leave
+
   const handleMouseLeave = () => {
     setHoveredItem(null);
   };

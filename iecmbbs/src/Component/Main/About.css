@@ -2,30 +2,29 @@
     min-height: 100vh;
     background-color: white;
     padding: 32px;
-  }
-  
-  .content-wrapper {
+}
+
+.content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 48px;
     position: relative;
-  }
-  
-  /* Image Section */
-  .image-section {
+}
+
+.image-section {
     flex: 1;
     position: relative;
-  }
-  
-  .main-image {
+}
+
+.main-image {
     width: 100%;
     border-radius: 8px;
     display: block;
-  }
-  
-  .overlay-card {
+}
+
+.overlay-card {
     position: absolute;
     bottom: 48px;
     left: 50%;
@@ -35,67 +34,66 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
-  }
-  
-  .card-content {
+}
+
+.card-content {
     text-align: center;
-  }
-  
-  .card-content p {
+}
+
+.card-content p {
     margin: 8px 0;
     color: #333;
-  }
-  
-  .grade {
+}
+
+.grade {
     font-size: 48px;
     font-weight: bold;
     color: #dc2626;
     margin: 16px 0;
-  }
-  
-  /* Text Section */
-  .text-section {
+}
+
+.text-section {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-  
-  .welcome-label {
+}
+
+.welcome-label {
     color: #666;
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 8px;
-  }
-  
-  .text-section h1 {
+}
+
+.text-section h1 {
     font-size: 36px;
     font-weight: bold;
     color: #111;
     margin: 0;
-  }
-  
-  .blue-line {
+}
+
+.blue-line {
     width: 48px;
     height: 4px;
     background-color: #1e40af;
     margin: 24px 0;
-  }
-  
-  .text-section h2 {
+}
+
+.text-section h2 {
     font-size: 24px;
     font-weight: 500;
     color: #333;
     margin: 0;
-  }
-  
-  .description {
+}
+
+.description {
     color: #555;
     line-height: 1.6;
     margin: 0;
-  }
-  
-  .learn-more-btn {
+}
+
+.learn-more-btn {
     background-color: #1e40af;
     color: white;
     padding: 12px 32px;
@@ -108,11 +106,10 @@
 }
 
 .learn-more-btn:hover {
-    background-color: #dc2626; /* This is a red color */
+    background-color: #dc2626; 
 }
-  
-  /* Contact Buttons */
-  .contact-buttons {
+
+.contact-buttons {
     position: fixed;
     right: 0;
     top: 50%;
@@ -120,9 +117,9 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
-  
-  .contact-btn {
+}
+
+.contact-btn {
     width: 48px;
     height: 48px;
     display: flex;
@@ -131,9 +128,9 @@
     color: white;
     text-decoration: none;
     transition: background-color 0.3s;
-  }
-  
-  .counters-container {
+}
+
+.counters-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -142,58 +139,61 @@
     background-color: #fff;
     max-width: 1200px;
     margin: 40px auto;
-  }
-  
-  .counter-item {
+}
+
+.counter-item {
     text-align: center;
     padding: 0 20px;
-  }
-  
-  .counter-item h1 {
+}
+
+.counter-item h1 {
     font-size: 2.5rem;
-    color: #dc2626; /* Red color for numbers */
+    color: #dc2626;
     margin-bottom: 10px;
-  }
-  
-  .counter-item .names {
+}
+
+.counter-item .names {
     font-size: 1.2rem;
     color: #333;
     font-weight: 500;
     margin-top: 10px;
-  }
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .content-wrapper {
-      flex-direction: column;
-    }
+}
 
-  
-    .image-section,
-    .text-section {
-      width: 100%;
-    }
-  
-    .overlay-card {
-      width: 90%;
-    }
-  
-    .contact-buttons {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      top: auto;
-      transform: none;
-      flex-direction: row;
-    }
-    .counters-container {
-        flex-direction: column;
-        gap: 30px;
-      }
-    
-      .counter-item {
-        width: 100%;
-        padding: 20px 0;
-      }
+/* Media Query for 800px breakpoint */
+@media (max-width: 800px) {
+  .image-section {
+    display: none; /* Hide the image section */
   }
-  
-  
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%;
+  }
+
+  .overlay-card {
+    width: 90%;
+  }
+
+  .contact-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    transform: none;
+    flex-direction: row;
+  }
+
+  .counters-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .counter-item {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
